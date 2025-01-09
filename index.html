@@ -1,0 +1,67 @@
+<!DOCTYPE html>
+<html lang="pt-BR">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta http-equiv="refresh" content="5;url=https://wa.me/5511911638341?text=Olá%2C%20gostaria%20de%20agendar%20uma%20consulta%20com%20a%20Dra.%20Carla%20Zagoury">
+    <meta name="description" content="Você será redirecionado para agendar uma consulta com a Dra. Carla Zagoury.">
+    <meta property="og:title" content="Agende uma Consulta">
+    <meta property="og:description" content="Você será redirecionado para agendar uma consulta com a Dra. Carla Zagoury.">
+    <meta property="og:url" content="https://wa.me/5511911638341">
+    <meta property="og:type" content="website">
+    <title>Redirecionando...</title>
+    <style>
+        body {
+            font-family: Arial, sans-serif;
+            margin: 0;
+            padding: 0;
+            display: flex;
+            justify-content: center;
+            align-items: center;
+            height: 100vh;
+            text-align: center;
+            background-color: #f9f9f9;
+        }
+        h1 {
+            font-size: 1.5rem;
+            color: #333;
+        }
+        p {
+            font-size: 1rem;
+            color: #666;
+        }
+        a {
+            color: #007BFF;
+            text-decoration: none;
+        }
+        a:hover {
+            text-decoration: underline;
+        }
+    </style>
+    <script>
+        // Redireciona após 5 segundos
+        function redirect() {
+            const countdownElement = document.getElementById('countdown');
+            let countdown = 5; // Tempo em segundos
+            
+            const interval = setInterval(() => {
+                countdown--;
+                countdownElement.textContent = countdown;
+                
+                if (countdown <= 0) {
+                    clearInterval(interval);
+                    window.location.href = "https://wa.me/5511911638341?text=Olá%2C%20gostaria%20de%20agendar%20uma%20consulta%20com%20a%20Dra.%20Carla%20Zagoury"; // Link do WhatsApp
+                }
+            }, 1000);
+        }
+
+        window.onload = redirect;
+    </script>
+</head>
+<body>
+    <div>
+        <h1>Você será redirecionado em <span id="countdown">5</span> segundos...</h1>
+        <p>Se não for redirecionado automaticamente, <a href="https://wa.me/5511911638341?text=Olá%2C%20gostaria%20de%20agendar%20uma%20consulta%20com%20a%20Dra.%20Carla%20Zagoury" title="Clique para abrir o WhatsApp e agendar uma consulta.">clique aqui</a>.</p>
+    </div>
+</body>
+</html>
